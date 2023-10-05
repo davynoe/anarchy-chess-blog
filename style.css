@@ -3,16 +3,19 @@ body {
   font-family: Montserrat;
   font-size: 18px;
 }
+
 #anarchy-logo {
   width: 60px;
   display: inline-block;
   margin: 5px;
 }
+
 #title-box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header, footer, .post-box {
   background-color: rgb(75, 45, 34);
   padding: 10px;
@@ -24,29 +27,58 @@ header, footer, .post-box {
 header:hover, footer:hover, .post-box:hover {
   border-color: rgb(190, 139, 92);
 }
+
+.post-box {
+  display: flow-root;
+  margin: 30px 15px;
+}
 .post-box:hover h3 {
   color:rgb(190, 139, 92);
   border-color: rgb(190, 139, 92);
 }
+
 nav {
   display: flex;
   justify-content: center;
 }
+
 a {
+  text-decoration: none;
   color: rgb(144, 144, 144);
   font-weight: 800;
   margin: 10px;
-  transition: color 0.2s;
+  transition: color 0.2s, text-decoration 0.2s;
 }
 a:hover {
   color: rgb(190, 139, 92);
+  text-decoration: underline;
 }
+a:active {
+  color: rgb(75, 45, 34);
+}
+#github-link {
+  margin: 0;
+}
+#github-button {
+  margin-top: 0;
+}
+#github-p {
+  margin-bottom: 0;
+}
+#github-section {
+  display: flex;
+}
+#selected-page {
+  text-decoration: underline;
+}
+
 h2 {
   color: white;
   font-weight: 800;
   text-align: center;
   transition: color 0.2s;
 }
+
 h3 {
   display: inline-block;
   color: rgb(144, 144, 144);
@@ -56,10 +88,16 @@ h3 {
   transition: color 0.2s, border-color 0.2s;
   border-radius: 10px;
 }
+h4 {
+  color: rgb(144, 144, 144);
+  padding: 12px;
+  margin-bottom: 10px;
+}
 h3:hover {
   color:rgb(190, 139, 92);
   border-color: rgb(190, 139, 92);
 }
+
 .post-image {
   width: 40vw;
   height: 30vw;
@@ -72,44 +110,55 @@ h3:hover {
 .post-image:hover {
   border: 3px solid rgb(190, 139, 92);
 }
+
 #ban-image {
   float:left;
 }
-.post-box {
-  display: flow-root;
-  margin: 30px 15px;
-}
+
 p {
   color: rgb(144, 144, 144);
   font-weight: 500;
-  line-height: 30px;
-  margin: 15px;
+  line-height: 32px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
   transition: all 0.2s;
 }
+
 footer p {
   color: rgb(144,144,144);
 }
+
 span {
   font-weight: bold;
   transition: color 0.2s;
 }
+
 footer:hover span {
   color: rgb(190, 139, 92);
 }
+
 header:hover h2 {
   color: rgb(190, 139, 92);
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   p {
     font-size: 0.8em;
   }
+
   .post-image {
-    width: 65vw;
+    width: 70vw;
     height: 50vw;
     float: initial;
   }
+
   #ban-image {
     float: initial;
+  }
+  header, footer, .post-box {
+    padding: 8px;
+    margin: 8px;
   }
 }

@@ -99,7 +99,7 @@ h3:hover {
 }
 
 .post-image {
-  width: 40vw;
+  width: auto;
   height: 30vw;
   float: right;
   margin: 20px;
@@ -149,12 +149,14 @@ header:hover h2 {
   }
 
   .post-image {
-    width: 70vw;
-    height: 50vw;
+    width:80%;
+    height: auto;
     float: initial;
   }
 
   #ban-image {
+    width:80%;
+    height: auto;
     float: initial;
   }
   header, footer, .post-box {

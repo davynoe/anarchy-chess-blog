@@ -130,11 +130,6 @@ footer p {
   color: rgb(144,144,144);
 }
 
-span {
-  font-weight: bold;
-  transition: color 0.2s;
-}
-
 footer:hover span {
   color: rgb(190, 139, 92);
 }
